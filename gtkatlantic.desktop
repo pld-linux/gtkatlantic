@@ -6,6 +6,6 @@ Exec=gtkatlantic
 Icon=gtkatlantic.png
 Terminal=false
 Type=Application
-Categories=Application;Game;BoardGame;
+Categories=GTK;Game;BoardGame;
 Encoding=UTF-8
 # vi: encoding=utf-8
