@@ -10,9 +10,11 @@ Source0:	http://gtkatlantic.gradator.net/downloads/v0.4/%{name}-%{version}.tar.b
 Source1:	%{name}.desktop
 Source2:	%{name}.png
 URL:		http://gtkatlantic.gradator.net/
+BuildRequires:	gcc-c++
 BuildRequires:	gtk+2-devel
 BuildRequires:	libpng-devel
-BuildRequires:	libxml-devel
+BuildRequires:	libxml2-devel
+BuildRequires:	pkgconfig
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
