@@ -1,0 +1,11 @@
+[Desktop Entry]
+Name=GtkAtlantic
+Comment=Monopoly game client
+Comment[pl]=Klient gry Monopoly
+Exec=gtkatlantic
+Icon=gtkatlantic.png
+Terminal=false
+Type=Application
+Categories=Application;Game;BoardGame;
+Encoding=UTF-8
+# vi: encoding=utf-8
