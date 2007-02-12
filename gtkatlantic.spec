@@ -1,5 +1,5 @@
 Summary:	Monopoly game client
-Summary(pl):	Klient gry Monopol
+Summary(pl.UTF-8):   Klient gry Monopol
 Name:		gtkatlantic
 Version:	0.4.0
 Release:	1
@@ -21,7 +21,7 @@ BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 GtkAtlantic is a client for playing Monopoly-like board games on
 monopd network.
 
-%description -l pl
+%description -l pl.UTF-8
 GtkAtlantic jest klientem gier planszowych w stylu Monopoly
 wykorzystywanym w sieci monopd.
 
