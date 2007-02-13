@@ -1,5 +1,5 @@
 Summary:	Monopoly game client
-Summary(pl.UTF-8):   Klient gry Monopol
+Summary(pl.UTF-8):	Klient gry Monopol
 Name:		gtkatlantic
 Version:	0.4.0
 Release:	1
