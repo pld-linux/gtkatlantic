@@ -1,0 +1,14 @@
+--- gtkatlantic-0.4.2/src/readpng.c.orig	2010-02-07 03:18:38.249809917 +0100
++++ gtkatlantic-0.4.2/src/readpng.c	2010-02-07 03:19:12.003295403 +0100
+@@ -33,7 +33,11 @@ gboolean readpng_init(FILE *infile, png_
+ 	png_uint_32 width, height;
+ 
+ 	fread(sig, 1, 8, infile);
++    #if PNG_LIBPNG_VER < 10400
+ 	if (!png_check_sig(sig, 8))
++    #else
++	if (png_sig_cmp(sig, 0, 8) != 0)
++    #endif
+ 		return FALSE;
+ 
+ 	*png_struct = png_create_read_struct(PNG_LIBPNG_VER_STRING, NULL, NULL, NULL);

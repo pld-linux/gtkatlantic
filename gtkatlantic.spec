@@ -2,13 +2,14 @@ Summary:	Monopoly game client
 Summary(pl.UTF-8):	Klient gry Monopol
 Name:		gtkatlantic
 Version:	0.4.2
-Release:	1
+Release:	2
 License:	GPL
 Group:		X11/Applications/Games
 Source0:	http://gtkatlantic.gradator.net/downloads/v0.4/%{name}-%{version}.tar.bz2
 # Source0-md5:	26df95781ececae75feb181eed18fefb
 Source1:	%{name}.desktop
 Source2:	%{name}.png
+Patch0:		libpng14.patch
 URL:		http://gtkatlantic.gradator.net/
 BuildRequires:	gcc-c++
 BuildRequires:	gtk+2-devel
@@ -27,6 +28,7 @@ wykorzystywanym w sieci monopd.
 
 %prep
 %setup -q
+%patch0 -p1
 
 %build
 %configure
